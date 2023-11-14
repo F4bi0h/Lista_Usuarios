@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+form {
+    padding: 15px;
+    border-radius: 5px 0px 0px 5px;
+    height: 100%;
+}
+
+form h4 {
+    margin-top: 15px;
+    padding-bottom: 10px;
+    margin-bottom: 18px;
+    border-bottom: 1px solid #ccc;
+    color: aliceblue;
+    font-size: 45px;
+    
+}
+
+.container-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.area-form,
+.background-form {
+    height: 60vh;
+    width: 40%;
+}
+
+.background-form {
+    background-image: url(/images/bg2.jpg);
+    background-size: cover;
+    border-radius: 0px 5px 5px 0px;
+}
+
+
+.area-form-login {
+    height: 50vh;
+    width: 25vw;
+}

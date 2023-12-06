@@ -1,4 +1,6 @@
 <?php
+    session_start();
+    $_SESSION['autenticado'] = 'NAO';
 
     if(!empty($_POST['email']) && !empty($_POST['senha'])) {
         try {
@@ -21,9 +23,11 @@
             $stmt->execute();
 
             if($stmt->rowCount() == 1) {
+                $_SESSION['autenticado'] = 'SIM';
                 header('Location: ../lista_usuarios.php');
             } else {
-                header('Location: ../login.php?login=erro');
+                $_SESSION['autenticado'] = 'NAO';
+                header('Location: ../login.php?login=erro2');
             }
 
         } catch(PDOException $e) {

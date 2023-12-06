@@ -1,7 +1,5 @@
 <?php
-
-    
-
+    session_start();
 ?>
 
 <!DOCTYPE html>
@@ -39,7 +37,17 @@
                         <input id="senha" type="password" name="senha" class="form-control" placeholder="Senha" required>
                     </div>
 
+                    <?php  if(isset($_GET['login']) && $_GET['login'] == 'erro2') { ?>
+                        <div class="text-danger">Login ou senha incorreta!</div>
+                    <?php  } ?>
+
+                    <?php  if(isset($_GET['login']) && $_GET['login'] == 'erro3') { ?>
+                        <div class="text-danger">Faça login primeiro!</div>
+                    <?php  } ?>
+
                     <button type="submit" class="btn btn-success btn-block">Entrar</button>
+
+                    <a href="index.php">Cadastra-se</a>
                 </form>
             </div>
         </div>

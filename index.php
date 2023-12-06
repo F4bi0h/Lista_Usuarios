@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -13,9 +17,9 @@
 
 <body class="bg-secondary">
     <header>
-        <nav class="navbar navbar-expand-sm bg-dark bg-gradient navbar-dark fixed-top">
+        <nav class="navbar navbar-expand-sm bg-dark bg-gradient navbar-darkv fixed-top">
             <div class="container">
-                <a href="#" class="navbar-brand">Formulário de cadastro</a>
+                <a href="#" class="navbar-brand text-white">Formulário de cadastro</a>
             </div>
         </nav>
     </header>
@@ -38,33 +42,13 @@
                     </div>
 
                     <button type="submit" class="btn btn-success btn-block">Cadastrar</button>
+
+                    <a href="login.php">Fazer login</a>
                 </form>
             </div>
 
             <div class="background-form">
             </div>
-
-            <!-- <div class="form">
-                <form action="index.php" method="post" class="bg-warning bg-gradient text-dark">
-                    <h4>Cadastrar</h4>
-                    <div class="form-group">
-                        <input id="nome" type="text" name="nome" class="form-control" placeholder="Nome">
-                    </div>
-
-                    <div class="form-group">
-                        <input id="email" type="text" name="email" class="form-control" placeholder="E-mail">
-                    </div>
-
-                    <div class="form-group">
-                        <input id="senha" type="password" name="senha" class="form-control" placeholder="Senha">
-                    </div>
-
-                    <button type="submit" class="btn btn-success btn-block">Cadastrar</button>
-                </form>
-            </div>
-
-            <div class="background-form">
-            </div> -->
         </div>
     </main>
 </body>

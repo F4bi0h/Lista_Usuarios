@@ -33,6 +33,10 @@ form h4 {
     height: 100vh;
 }
 
+.area-form form > a {
+    text-decoration: none;
+}
+
 .area-form,
 .background-form {
     height: 60vh;
@@ -46,7 +50,16 @@ form h4 {
 }
 
 
-.area-form-login {
+.area-form-login form {
     height: 50vh;
     width: 25vw;
+    border-radius: 5px;
+}
+
+.area-form-login form h4 {
+    margin-top: 5px;
+}
+
+.area-form-login form a {
+    text-decoration: none;
 }

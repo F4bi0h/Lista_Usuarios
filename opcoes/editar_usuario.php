@@ -9,13 +9,9 @@
 
         $conexao = new PDO($dns, $root, $password);
 
-        $query = "delete from usuarios where id_usuario = :user_id";
+        $query = "select * from usuarios";
 
-        $stmt = $conexao->prepare($query);
-        $stmt->bindValue(':user_id', $_GET['usuario']);
-        $stmt->execute();
-
-        header('Location: ../login.php?usuario=removido');
+        echo $_GET['usuario'];
 
     } catch(PDOException $e) {
         echo 'Erro: ' . $e->getCode() . ' / Mensagem: ' . $e->getMessage();

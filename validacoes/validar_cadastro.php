@@ -23,7 +23,7 @@
 
             $stmt->execute();
 
-            header('Location: ../login.php');
+            header('Location: ../login.php?cadastro=SIM');
 
         } catch (PDOException $e) {
             echo 'Erro: ' . $e->getCode() . ' / Mensagem: ' . $e->getMessage();

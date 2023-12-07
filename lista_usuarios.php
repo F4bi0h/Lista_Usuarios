@@ -80,8 +80,8 @@ try {
                                 <?= $value['email'] ?>
                             </td>
                             <td class="text-center">
-                                <a href="opcoes/editar_usuario.php" class="btn btn-warning">Editar</a>
-                                <a href="opcoes/remover_usuario.php" class="btn btn-danger">Remover</a>
+                                <a href="opcoes/editar_usuario.php?usuario=<?= $value['id_usuario'] ?>" class="btn btn-warning">Editar</a>
+                                <a href="opcoes/remover_usuario.php?usuario=<?= $value['id_usuario'] ?>" class="btn btn-danger">Remover</a>
                             </td>
                         </tr>
                     <?php } ?>

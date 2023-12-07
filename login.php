@@ -17,7 +17,7 @@
 
 <body class="bg-secondary">
     <header>
-        <nav class="navbar navbar-expand-sm bg-dark bg-gradient navbar-dark fixed-top">
+        <nav class="navbar navbar-expand-sm bg-dark bg-gradient navbar-dark">
             <div class="container">
                 <a href="#" class="navbar-brand">Login</a>
             </div>
@@ -25,6 +25,9 @@
     </header>
 
     <main>
+        <?php if(isset($_GET['usuario']) && $_GET['usuario'] == 'removido') { ?>
+            <div class="text-danger display-4 text-center">Usuário excluído!</div>
+        <?php } ?>
         <div class="container container-form">
             <div class="area-form-login">
                 <form action="/validacoes/validar_login.php" method="post" class="bg-dark bg-gradient text-dark">
